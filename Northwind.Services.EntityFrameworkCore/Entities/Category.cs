@@ -1,0 +1,28 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+
+namespace Northwind.Services.EntityFrameworkCore.Entities
+{
+    [Index(nameof(CategoryName), Name = "CategoryName")]
+    public partial class Category
+    {
+        public Category()
+        {
+            Products = new HashSet<Product>();
+        }
+
+        [Key]
+        [Column("CategoryID")]
+        public int CategoryId { get; set; }
+        [StringLength(15)]
+        public string CategoryName { get; set; } = null!;
+        [Column(TypeName = "ntext")]
+        public string? Description { get; set; }
+        [Column(TypeName = "image")]
+        public byte[]? Picture { get; set; }
+
+        [InverseProperty(nameof(Product.Category))]
+        public virtual ICollection<Product> Products { get; set; }
+    }
+}

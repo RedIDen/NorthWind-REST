@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.DataAccess.SqlServer\Northwind.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\Northwind.DataAccess\Northwind.DataAccess.csproj" />
+    <ProjectReference Include="..\Northwind.Services.DataAccess\Northwind.Services.DataAccess.csproj" />
+    <ProjectReference Include="..\Northwind.Services.EntityFrameworkCore\Northwind.Services.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Northwind.Services\Northwind.Services.csproj" />
+    <ProjectReference Include="..\Northwind.Services.EntityFrameworkCore.Blogging\Northwind.Services.EntityFrameworkCore.Blogging.csproj" />
+  </ItemGroup>
+
+</Project>
