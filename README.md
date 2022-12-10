@@ -3,7 +3,7 @@
 Represents a RESTful application for the training database "Northwind".
 
 Used technologies: 
-* ASP.NET Core  
 * .NET 6 (C# 10)  
+* ASP.NET Core  
 * ADO.NET  
 * Entity Framework Core  
