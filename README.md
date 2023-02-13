@@ -1,6 +1,6 @@
-# The final project from the EPAM ASP.NET Training.
+# NorthWind-REST is a final project from the EPAM ASP.NET Training.
 
-Represents a RESTful application for the training database "Northwind".
+A RESTful application for the training database "Northwind".
 
 Used technologies: 
 * .NET 6 (C# 10)  
